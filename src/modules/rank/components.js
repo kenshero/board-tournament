@@ -9,7 +9,6 @@ const RankPage = () => {
       <Navbar />
       <div className="bg-gray-900 md:hidden">
         <TeamMenuMobile />
-
       </div>
     </div>
   )
