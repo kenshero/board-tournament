@@ -96,7 +96,7 @@ export const RankingWrapper = () => {
       <div className="w-3/4 bg-gray-700 border-b">
         <p className="text-left ml-10 text-gray-300 pt-7">
           สเตจ:
-          ฤดูกาลปรกติ
+          ฤดูกาลปกติ
         </p>
       </div>
     </div>
@@ -107,7 +107,7 @@ export const RankingWrapper = () => {
           {
             teams.map((item, index) => {
               return (
-              <div className="p-4 flex space-x-4 border-b">
+              <div className="p-4 flex space-x-4 border-b" key={index}>
                 <div className="flex-shrink-0">
                   <img className="h-12 w-12" src="https://icons-for-free.com/iconfiles/png/128/globe+internet+map+network+planet+world+icon-1320168019941260763.png" alt="ChitChat Logo" />
                 </div>
@@ -126,7 +126,7 @@ export const RankingWrapper = () => {
           {
             results.map((item, index) => {
               return (
-                <div className="p-4 flex space-x-4 border-b">
+                <div className="p-4 flex space-x-4 border-b" key={index}>
                   <h1 className="text-4xl text-white ml-10 mr-10">{index + 1}</h1>
                   <div className="flex-shrink-0">
                     <img className="h-12 w-12" src="https://icons-for-free.com/iconfiles/png/128/globe+internet+map+network+planet+world+icon-1320168019941260763.png" alt="ChitChat Logo" />

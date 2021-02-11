@@ -8,7 +8,6 @@ export const Navbar = () => {
   }
 
   const [navState, setNavState] = useState(state)
-  console.log(navState)
 
   const handleToggleMenu = (e) => {
     setNavState(prevState => ({
